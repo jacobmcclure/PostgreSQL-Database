@@ -1,0 +1,15 @@
+ALTER TABLE Teams
+ADD CONSTRAINT coachID_as_personID
+FOREIGN KEY (coachID) REFERENCES Persons (personID);
+
+ALTER TABLE GamePlayers
+ADD CONSTRAINT gameID_ref_games
+FOREIGN KEY (gameID) REFERENCES Games (gameID)
+ON DELETE CASCADE
+ON UPDATE CASCADE;
+
+ALTER TABLE GamePlayers
+ADD CONSTRAINT gamePlayer_is_player
+FOREIGN KEY (playerID) REFERENCES Players (playerID)
+ON UPDATE CASCADE;
+
