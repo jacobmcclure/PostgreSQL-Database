@@ -1,9 +1,6 @@
--- You won't lose points if you include or don't include the next two lines
-DROP SCHEMA Lab3 CASCADE; 
-CREATE SCHEMA Lab3; 
-ALTER ROLE jatmcclu SET SEARCH_PATH to Lab3;
-
--- Create Tables for Lab2, which you'll have to modify, adding additional constraints
+DROP SCHEMA Volleyball CASCADE; 
+CREATE SCHEMA Volleyball; 
+ALTER ROLE jatmcclu SET SEARCH_PATH to Volleyball;
 
 -- Persons(personID, name, address, salary, canBePlayer, canBeCoach)
 CREATE TABLE Persons (
